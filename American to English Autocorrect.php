@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* FUNCTIONS */
 
-function american_english_startcase($text){
+function eb_american_english_startcase($text){
 	$English = array(
 	'Grey', 'Travelled', 'Centre', 'Theatre', 'Colour', 'Labour', 'Defence', 'Jewellery', 'Kerb', 'Litre', 'Metre', 'Tyre', 'Aluminium', 'Neighbour', 'Aeroplane', 'Carburettor', 'Fillet', 'Moustache', 'Speciality', 'Doughnut', 'Orientated', 'Disorientated', 'Phoney', 'Plough', 'Sceptic', 'Sulphur', 'Vice', 'Cosy', 'Chilli'
 	);
@@ -26,7 +26,7 @@ function american_english_startcase($text){
 	return str_replace($American, $English, $text);
 }
 
-function american_english_lowercase($text){
+function eb_american_english_lowercase($text){
 	$english = array(
 		'grey', 'travelled', 'centre', 'theatre', 'colour', 'labour', 'defence', 'jewellery', 'kerb', 'litre', 'metre', 'tyre', 'aluminium', 'neighbour', 'aeroplane', 'carburettor', 'fillet', 'moustache', 'speciality', 'doughnut', 'orientated', 'disorientated', 'phoney', 'plough', 'sceptic', 'sulphur', 'vice', 'cosy', 'chilli'
 	);
@@ -38,7 +38,7 @@ function american_english_lowercase($text){
 	return str_replace($american, $english, $text);
 }
 
-function american_english_uppercase($text){
+function eb_american_english_uppercase($text){
 	$ENGLISH = array(
 		'GREY', 'TRAVELLED', 'CENTRE', 'THEATRE', 'COLOUR', 'LABOUR', 'DEFENCE', 'JEWELLERY', 'KERB', 'LITRE', 'METRE', 'TYRE', 'ALUMINIUM', 'NEIGHBOUR', 'AEROPLANE', 'CARBURETTOR', 'FILLET', 'MOUSTACHE', 'SPECIALITY', 'DOUGHNUT', 'ORIENTATED', 'DISORIENTATED', 'PHONEY', 'PLOUGH', 'SCEPTIC', 'SULPHUR', 'VICE', 'COSY', 'CHILLI'
 	);
@@ -52,13 +52,13 @@ function american_english_uppercase($text){
 
 /* FILTERS */
 
-add_filter('the_title', 'american_english_lowercase');
-add_filter('the_content', 'american_english_lowercase');
+add_filter('the_title', 'eb_american_english_lowercase');
+add_filter('the_content', 'eb_american_english_lowercase');
 
-add_filter('the_title', 'american_english_uppercase');
-add_filter('the_content', 'american_english_uppercase');
+add_filter('the_title', 'eb_american_english_uppercase');
+add_filter('the_content', 'eb_american_english_uppercase');
 
-add_filter('the_title', 'american_english_startcase');
-add_filter('the_content', 'american_english_startcase');
+add_filter('the_title', 'eb_american_english_startcase');
+add_filter('the_content', 'eb_american_english_startcase');
 
 ?> 
