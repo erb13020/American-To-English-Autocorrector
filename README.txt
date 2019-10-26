@@ -2,6 +2,8 @@ Plugin Name: American to English Autocorrecter
 Description: This plugin replaces common American English spellings of words with their respective English spellings.
 Version:     1.1
 Author:      Eric Burt
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Word Source: https://greyorgray.com/most-commonly-misspelled-words/
 
